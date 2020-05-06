@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	// menampilkan bilangan prima
+	int angka_awal = 1;
+	int angka_akhir = 50;
+	
+	for ( int r = angka_awal ; r <= angka_akhir ; r++ )
+	{
+		int counterPrima = 0;
+		for ( int i =  1 ; i <= r ; i++ )
+		{
+			if ( r % i == 0 )
+			{
+			counterPrima++;	
+			}
+		}
+		if ( counterPrima == 2 )
+		{
+			cout << r << " adalah bilangan prima " << endl;
+		}
+	}
+}
